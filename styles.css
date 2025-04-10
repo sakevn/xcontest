@@ -1,0 +1,149 @@
+/* Main Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    padding-bottom: 2rem;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaecef;
+}
+
+.card-header h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Map Styles */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Altitude Chart Styles */
+#altitudeChart {
+    height: 250px;
+    width: 100%;
+}
+
+.altitude-axis path, .altitude-axis line {
+    stroke: #ccc;
+}
+
+.altitude-axis text {
+    font-size: 10px;
+    fill: #666;
+}
+
+.altitude-path {
+    fill: none;
+    stroke: #4682b4;
+    stroke-width: 2px;
+}
+
+.altitude-area {
+    fill: #9ecae1;
+    opacity: 0.7;
+}
+
+.altitude-grid line {
+    stroke: #eee;
+    stroke-opacity: 0.5;
+    shape-rendering: crispEdges;
+}
+
+.scale-indicator {
+    font-size: 0.9rem;
+}
+
+/* Flight Info Styles */
+#flightInfo table {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+#flightInfo table td {
+    padding: 4px 0;
+}
+
+.no-data-message {
+    color: #6c757d;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Loading indicator */
+#loadingIndicator {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Sample URLs */
+.sample-urls {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Waypoint markers */
+.waypoint-marker {
+    z-index: 1000 !important;
+}
+
+/* QR Code Container */
+#qrCodeContainer {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+    }
+    
+    #altitudeChart {
+        height: 200px;
+    }
+    
+    .card-header h3 {
+        font-size: 1.1rem;
+    }
+}
